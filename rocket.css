@@ -1,0 +1,77 @@
+body { 
+      background-image: url("launch3.jpg");
+       background-size: cover;
+}
+
+img {
+     width: 90px;
+     height: auto;
+     position: absolute;
+     bottom:24px;
+     right: 55%;
+     /* transform: translateX(-5%); */
+     animation: fly 12s ease-out;
+}
+
+.navbar {
+display: inline-block;
+font-size: 20px;
+
+}
+.navbar li {
+
+display: inline-block;
+font-size: 20px;
+
+}
+.navbar li a {
+color: white;
+text-decoration: none;
+padding :34px 23px;
+}
+
+.navbar li a:hover {
+text-decoration: underline;
+color: grey;
+}
+
+@keyframes fly {
+
+    0% {
+
+        transform: translate(-30%,0);
+
+    }
+    100% {
+
+        transform: translate(-30%,-800%);
+
+    }
+}
+
+.roc {
+     
+    width:200px;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+     color:white;
+
+}
+
+.container{
+    height: 20;
+    position: absolute;
+    left:65%;
+    top:50%;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: scale  0.01s ease-out;
+}
+.roc:hover,.container:hover {
+     
+    transform: scale(2);
+}
